@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Services</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+<a href="#"> </a><img src="images/mylogo.png" alt="CompanyLogo" width="100px" height="100px">
+
+<h2>Creativity Guide</h2>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<div class="cart" onclick="toggleCart()">
+🛒 Cart <span id="cartCount" class="cart-count">0</span>
+</div>
+
+</header>
+
+<section class="page">
+
+<h1>Our Services</h1>
+<p>Helping students learn creative writing skills,create something new and grow through innovation.</p>
+
+<div class="card-container">
+
+<!-- Web Development -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1717726974193-e129a961ded1?w">
+
+<h3>Essay Writing Guide</h3>
+
+<p>Learn how to write effective essays.</p>
+
+<button onclick="toggleDetails('web')">Know More</button>
+
+<div id="web" class="details">
+
+<h4>Overview</h4>
+<p>
+Learn how to write useful content, publish your ideas and begin your journey of creative
+content writing.
+</p>
+
+<h4>Learning Roadmap</h4>
+
+<ul>
+<li>HTML – Structure of a website</li>
+<li>CSS – Design and layout</li>
+<li>JavaScript – Website interactivity</li>
+<li>GitHub – Version control</li>
+<li>Deployment – Hosting your site online</li>
+</ul>
+
+<h4>Recommended Resources</h4>
+
+<ul>
+<li>Wikipedia</li>
+<li>Grammarly</li>
+<li>Paperpal</li>
+<li>Coursera</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- Startup Building -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1515104882246-521e5ba18f5e?w">
+
+<h3>Poem Writing Guide</h3>
+
+<p>Turn your ideas into words and let them flow.</p>
+
+<button onclick="toggleDetails('startup')">Know More</button>
+
+<div id="startup" class="details">
+
+<h4>Overview</h4>
+<p>
+Learn how poets use simple language in a way that it holds deep meanings.
+Start as a beginner and become a pro.
+</p>
+
+<h4>Creativity Roadmap</h4>
+
+<ul>
+<li>Understand the topic</li>
+<li>Understand the key highlights of crrativity guide</li>
+<li>Start by writing your own content</li>
+<li>Publish your work</li>
+<li>Improve based on feedback</li>
+</ul>
+
+<h4>Recommended Resources</h4>
+
+<ul>
+<li>Grammarly</li>
+<li>PaperHelp</li>
+<li>Poem Hunter</li>
+<li>Youtube</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- Mentoring -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w">
+
+<h3>Content Writing</h3>
+
+<p>Guidance for students writing content.</p>
+
+<button onclick="toggleDetails('mentor')">Know More</button>
+
+<div id="mentor" class="details">
+
+<h4>Overview</h4>
+<p>
+This simple content writing guide helps the users to align their work perfectly
+with the given topic.
+</p>
+
+<h4>What is "Content"?</h4>
+
+<ul>
+<li>Written Document</li>
+<li>Summarise content,write Research Ppapers and make Notes</li>
+<li>Important info included</li>
+<li>Literature Growth</li>
+<li>Furnish and Publish your ideas.</li>
+</ul>
+
+<h4>Resources</h4>
+
+<ul>
+<li>Research Papers available online</li>
+<li>Plagiarism checker tools</li>
+<li>Content Ideation</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- Community -->
+
+<div class="card">
+
+<img src="https://plus.unsplash.com/premium_photo-1684444605542-93725082d214?w">
+
+<h3>Furnish and Publish</h3>
+
+<p>Promoting the new age minds to show their creativity.</p>
+
+<button onclick="toggleDetails('community')">Know More</button>
+
+<div id="community" class="details">
+
+<h4>Overview</h4>
+<p>
+Publishing the work makes the web page interactive & foster new confidence in users.
+</p>
+
+<h4>What can you Publsih?</h4>
+
+<ul>
+<li>Essays</li>
+<li>Self-Composed poems</li>
+<li>Research Papers</li>
+<li>Summary of large content</li>
+<li>Notes</li>
+</ul>
+
+<h4>Platforms</h4>
+
+<ul>
+<li>Discord communities</li>
+<li>LinkedIn groups</li>
+<li>GitHub collaboration</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="cart-panel" id="cartPanel">
+
+<div class="cart-header">
+
+<h3>Your Cart</h3>
+
+<button class="close-cart" onclick="toggleCart()">✖</button>
+
+</div>
+
+<ul id="cartItems"></ul>
+
+<div class="cart-footer">
+
+<button onclick="clearCart()" class="clear-cart">Clear Cart</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-col">
+
+<h3 class="logo">Creativity Guide</h3>
+
+<p>
+Helping students learn creative writing skills,create something new and grow through innovation.
+</p>
+
+<div class="social-icons">
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+
+
+</div>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Quick Links</h4>
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Resources</h4>
+
+<a href="#">Sapmle Content</a>
+<a href="#">Your Essay Writing Guide</a>
+<a href="#">Your Poem Writing Guide</a>
+<a href="#">Publish</a>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Contact</h4>
+
+<p>Email: hello@thecreativityguide.com</p>
+<p>Location: Mumbai, India</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>© 2026 The Creativity Guide | Learn • Create • Publish</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+

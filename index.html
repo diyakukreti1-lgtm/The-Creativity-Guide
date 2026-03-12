@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>The Creativity Guide</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="welcomeMessage()">
+
+<header>
+
+<a href="#"> </a><img src="images/mylogo.png" alt="CompanyLogo" width="75px" height="75px">
+
+<h2>Creativity Guide</h2>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+ 
+
+<div class="cart" onclick="toggleCart()">
+🛒 Cart <span id="cartCount" class="cart-count">0</span>
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>Your Creativity Guide</h1>
+
+<p>Learn to write essays,poems & summarize large content.</p>
+
+<a class="btn" href="products.html">Explore Products</a>
+
+</section>
+
+<section class="page">
+
+<h1>What's so special about us?</h1>
+
+<div class="card-container">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q">
+
+<h3>Learn Creative Writing Skills</h3>
+
+<p>Master the art to write insightful essays.</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://plus.unsplash.com/premium_photo-1684444605542-93725082d214?q">
+
+<h3>Compose new poems.</h3>
+
+<p>Get guidance on learning the deep meanings behind poems.</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1674154642704-0a4f0bdcb676?q">
+
+<h3>Brainstorm</h3>
+
+<p>Brainstorm new ideas and enhace your literature knowledge.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="cart-panel" id="cartPanel">
+
+<div class="cart-header">
+
+<h3>Your Cart</h3>
+
+<button class="close-cart" onclick="toggleCart()">✖</button>
+
+</div>
+
+<ul id="cartItems"></ul>
+
+<div class="cart-footer">
+
+<button onclick="clearCart()" class="clear-cart">Clear Cart</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-col">
+
+<h3 class="logo">Creativity Guide</h3>
+
+<p>
+Helping students learn creative writing skills,create something new and grow through innovation.
+</p>
+
+<div class="social-icons">
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-discord"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+
+</div>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Quick Links</h4>
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Resources</h4>
+
+<a href="#">Sample Content</a>
+<a href="#">Your Essay Writing Guide</a>
+<a href="#">Your Poem Writing Guide</a>
+<a href="#">Publish</a>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Contact</h4>
+
+<p>Email: hello@thecreativityguide.com</p>
+<p>Location: Mumbai, India</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>© 2026 The Creativity Guide | Learn • Create • Publish</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Products</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+<a href="#"> </a><img src="images/mylogo.png" alt="CompanyLogo" width="100px" height="100px">
+
+<h2>Creativity Guide</h2>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<div class="cart" onclick="toggleCart()">
+🛒 Cart <span id="cartCount" class="cart-count">0</span>
+</div>
+
+</header>
+
+<section class="page">
+
+<h1>Our Products</h1>
+
+<div class="card-container">
+
+<div class="card">
+
+<img src="https://plus.unsplash.com/premium_photo-1685134731588-783ca7471b65?w">
+
+<h3>Essay Writing Guide</h3>
+
+<p>Write effective essays using the insights given.</p>
+
+<button onclick="addToCart('Website Starter Kit')">Add to Cart</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1576238580501-f21ccaaa83ac?w">
+
+<h3>Poem Writing Guide</h3>
+
+<p>Bring your thoughts to words and make them flow.</p>
+
+<button onclick="addToCart('Startup Landing Page')">Add to Cart</button>
+
+</div>
+
+<div class="card">
+<img src="https://media.istockphoto.com/id/1197306551/photo/get-published-words-from-wooden-blocks-with-letters.webp?a=1&b=1&s=612x612&w=0&k=20&c=KV6k09YJF8gIwd3ZQVi_RjO1lVKn2sqQ2auNGBzAxBI=">
+
+<h3>Publish</h3>
+
+<p>Publish your work and build confidence in writing.</p>
+
+<button onclick="addToCart('Developer Toolkit')">Add to Cart</button>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="cart-panel" id="cartPanel">
+
+<div class="cart-header">
+
+<h3>Your Cart</h3>
+
+<button class="close-cart" onclick="toggleCart()">✖</button>
+
+</div>
+
+<ul id="cartItems"></ul>
+
+<div class="cart-footer">
+
+<button onclick="clearCart()" class="clear-cart">Clear Cart</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-col">
+
+<h3 class="logo">Creativity Guide</h3>
+
+<p>
+ Helping students learn creative writing skills,create something new and grow through innovation.
+</p>
+
+<div class="social-icons">
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+
+</div>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Quick Links</h4>
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Resources</h4>
+
+<a href="#">Sample Content</a>
+<a href="#">Your Essay Writing Guide</a>
+<a href="#">Your Poem Writing Guide</a>
+<a href="#">Publish</a>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Contact</h4>
+
+<p>Email: hello@thecreativityguide.com</p>
+<p>Location: Mumbai, India</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>© 2026 The Creativity Guide | Learn • Create • Publish</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
